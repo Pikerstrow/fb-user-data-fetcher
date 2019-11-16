@@ -10,7 +10,7 @@
             "email": "pikerstrow@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "0.1.0",
     "autoload": {
         "psr-4": { "Pikerstrow\\FBUserDataFetcher\\": "src/" },
         "exclude-from-classmap": [
