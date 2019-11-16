@@ -1,0 +1,24 @@
+{
+    "name": "pikerstrow/fb-user-data-fetcher",
+    "description": "Fetch Facebook user data by provided access token.",
+    "keywords": ["facebook", "user", "data"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleksandr Mishchuk",
+            "email": "pikerstrow@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": { "Pikerstrow\\FBUserDataFetcher\\": "src/" },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "require": {
+        "php": "^7.2",
+        "ext-curl": "*"
+    }
+}
