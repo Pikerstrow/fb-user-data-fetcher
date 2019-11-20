@@ -32,6 +32,9 @@ class FBHttpClient
         try {
             curl_setopt($this->resource, CURLOPT_URL, $url);
             $user = curl_exec($this->resource);
+            if(!$user){
+                throw new FBFetcherException('Error in fetching user from Facebook server. Error ' . curl_error($this->resource));
+            }
             return $user;
         } catch (Throwable $e) {
             throw new FBFetcherException('Fetching data failed. Error ' . $e->getMessage());
